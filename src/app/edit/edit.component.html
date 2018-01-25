@@ -1,0 +1,5 @@
+<div *ngIf = "appService.editable">
+    <p><input type='text' (change)="editID.value" #editID>  Id<p>
+    <p><input type='text' (change)="editName.value" #editName>  Todo<p>
+    <button (click)="editToDo(appService.editableToDo, editID.value, editName.value)" >Valider</button>
+</div>

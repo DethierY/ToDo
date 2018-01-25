@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor = "let todo of appService.listToDo">{{todo.id}}  {{todo.name}}  
+    <button (click)= "deleteToDo(todo)">Supprimer</button>
+    <button (click)= "editTrue(todo)">Editer</button>
+  </li>
+</ul>
